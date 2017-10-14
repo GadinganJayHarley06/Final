@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+   
+   <h2>subjects</h2>
+	{% for subject in subjects %}	
+	<p>{{ subject.subject_name}} {{ subject.description}} </p>
+	{% endfor %}
+{% endblock %}	
+	
